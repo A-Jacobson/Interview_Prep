@@ -10,7 +10,7 @@ Collection of notebooks reviewing concepts in CS, ML, and Stats for data science
 - Cracking the Coding interview - https://drive.google.com/drive/u/0/folders/0B73KGlyDvGNtU1hwTnhZNnRjMjQ
 
 #### Topics:
-- Big O -
+- Big O - https://github.com/A-Jacobson/interview_prep/blob/master/algorithms/BigO.ipynb
 - Recursion -
 - Linked Lists -
 - Arrays -
@@ -19,7 +19,10 @@ Collection of notebooks reviewing concepts in CS, ML, and Stats for data science
 - Queues -
 - Trees -
 - Graphs -
-- Sorting -
+- Sorting:
+ - insertion sort - https://github.com/A-Jacobson/interview_prep/blob/master/algorithms/Insertion%20Sort.ipynb
+ - merge sort -
+ https://github.com/A-Jacobson/interview_prep/blob/master/algorithms/Merge%20Sort.ipynb
 - Breath First Search -
 - Depth First Search -
 
