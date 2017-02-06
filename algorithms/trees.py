@@ -1,0 +1,49 @@
+
+
+class BinaryTree:
+
+    def __init__(self, root_object):
+        self.key = root_object
+        self.left_child = None
+        self.right_child = None
+
+    def insert_left(self, new_node):
+        if self.left_child == None:
+            self.left_child = BinaryTree(new_node)
+        else:
+            # if there is aleft child, insert a node and push existing node
+            # down one level
+            temp = BinaryTree(new_node)
+            temp.left_child = self.left_child
+            self.left_child = temp
+
+    def insert_right(self, new_node):
+        if self.right_child == None:
+            self.right_child = BinaryTree(new_node)
+        else:
+            temp = BinaryTree(new_node)
+            # set current right to right child of new node
+            temp.right_child = self.right_child
+            self.right_child = temp  # set new node to right child position
+
+    def get_left_child(self):
+        return self.left_child
+
+    def get_right_child(self):
+        return self.right_child
+
+    def set_root_value(self, obj):
+        self.key = obj
+
+    def get_root_value(self):
+        return self.key
+
+    def preorder(self):
+        print self.key
+        if self.left_child:
+            self.left_child.preorder()
+        if self.right_child:
+            self.right_child.preorder()
+
+
+
